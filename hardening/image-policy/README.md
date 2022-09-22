@@ -21,7 +21,7 @@ spec:
 status:
   internalRegistryHostname: image-registry.openshift-image-registry.svc:5000
 
-===========================================================================================
+=========================================================================================
 
 Permanent
 
@@ -67,8 +67,10 @@ spec:
         mode: 420
         overwrite: true
         path: /etc/containers/registries.conf
+```
 
 4. Apply the configuration to our cluster
+
 ```
 [root@pl-srv1 ~]# oc create -f  registries-block.yaml
 
